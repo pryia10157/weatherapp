@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background-color: #090e21;
+}
+.mobut{
+    display:none;
+}
+.name{
+    color: #f7f7f7;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.bar1{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+    
+}
+
+.bar1 a{
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 20px;
+   
+    
+}
+li{
+   
+padding: 18px;
+
+
+  
+
+}
+
+.drop{
+    
+    display:none;
+}
+
+li:hover{
+    background-color: #a8a7ac;
+    
+}
+
+.down:hover .drop{
+
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    background-color: #090e21;
+    margin-left: -19.5px;
+}
+
+
+@media screen and (max-width:1025px){
+
+    .mobut{
+        position: absolute;
+        left: 10vh;
+        display: block;
+        width: 50px;
+        height: 30px;
+        background-color: #090e21;
+        color:#f7f7f7;
+        border:none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+    .mobut:hover{
+        background-color: #a8a7ac;
+        border-radius: 5px;
+    }
+    .bar1{
+        width: 40%;
+        position: fixed;
+        right: 340px;
+        top:6vh;
+        
+        height: 94vh;
+        display:flex;
+        flex-direction: column;
+        background-color: #090e21;
+    }
+    .drop{
+        
+    position: fixed;
+    left: 30.5vh;
+    bottom: 24vh;
+    }
+
+    body{
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+}
+
+
+
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2012/11/28/09/53/hurricane-67581_960_720.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainh{
+    opacity: 1;
+    font-weight: bold;
+    color:#090e21;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.home{
+    margin: 40px 40px 40px 40px;
+    background-color: rgb(168,167,172,0.5);
+    width: 1350px;
+    height: 650px;
+    padding:40px; 
+    border-radius: 15px;
+}
+
+p{
+    color:#f7f7f7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+h2{
+    text-align: left;
+    color:#081030;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 37px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#b1{
+
+    display: inline;
+    background-color: #011e49;
+    color: #f7f7f7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: #79797a;
+    border-radius: 10px;
+    min-height: 80px;
+    min-width: 400px;
+    font-size: 35px;
+    text-decoration: none;
+    margin:60px;
+    margin-left: 3px;
+}
+

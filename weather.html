@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Weather">
+    <meta name ="keywords" content="weather,realtime,climate">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleweather.css">
+    <title> The Weather App</title>
+</head>
+<body>
+    <nav>
+        <a class="mobut">Menu</a>
+        <div class="name">
+            <h3>The Weather App</h3>
+        </div>
+        
+        <ul class="bar1">
+           <li><a href="projectindex.html">Home</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li class="down"><a href="#">Statistics</a>
+                <ul class="drop">
+                    <li><a href="rainfall.html">Rainfall</a></li>
+                    <li><a href="temperature.html">Temperature</a></li>
+                </ul>
+            </li>
+               <li><a href="#">Contact</a></li>
+        </ul>
+       
+    </nav>
+    <div id ="Wapp"> 
+        <main>
+            <header>
+                <!-- search box -->
+                <input id = "search" type="text" placeholder = "Search..."/>  
+
+            </header>
+            <section> 
+                <!-- dispalays city name, date, temp, weather, humidity -->
+                <div id = "city">Port-of-Spain</div>           
+                <div id = "date">Thursday 07 May 2020</div>
+                <div id = "temperature">27°c</div>
+                <div id = "weather">sunny</div>
+                <div id = "hum">100</div>
+            </section>
+
+        </main>
+    </div>
+    <!-- links the javascript -->
+    <script src = "weather.js"></script>
+</body>
+</html>
