@@ -30,24 +30,6 @@ nav{
 
 }
 
-ul{
-  float: right;
-  list-style-type: none;
-  margin: 20px;
-}
-
- li{
-  display: inline-block;
-}
-
- ul a{
-  text-decoration: none;
-  color: #EEE1D7;
-  padding: 5px 20px;
-  border: 1px solid transparent;
-  transition: 0.4s ease;
-}
-
  a:hover{
   background-color: rgb(193, 193, 194);
   color: #EEE1D7;
@@ -100,7 +82,7 @@ li:hover{
 
 body {
     font-family: 'sans-serif', Arial, Helvetica;
-    background-image: url('addationalResources.jpg');
+    background-image: linear-gradient( rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5) ),url('addationalResources.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -111,7 +93,7 @@ header{
     color: white;
     font-size: 15px;
     text-align: center;
-    padding-top: 230px;
+    padding-top: 220px;
 }
 
   #box {
@@ -131,6 +113,8 @@ header{
   #list{
       list-style: none;
       padding: 50px 50px;
+      border: 1px solid transparent;
+      transition: 0.4s ease;
   }
 
   #list a{
@@ -145,7 +129,7 @@ header{
   #search{
     width: 100%;
     max-width: 300px;
-    padding: 10px 10px;
+    padding: 7px 7px;
     outline: none;
     background-color: rgba(255, 255, 255, 0.2);
     font-size: 20px;
