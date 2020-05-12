@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background-color: 	rgb(71,55,48,0.2);
+}
+
+.mobut{
+    display: none;
+}
+
+.name{
+    color: 	#b6b1ad;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.name a{
+    color: 	#b6b1ad;
+    text-decoration: none;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin: 20px;
+  }
+  
+  li{
+    display: inline-block;
+  }
+  
+  ul a{
+    text-decoration: none;
+    color: #b6b1ad;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+  }
+  
+  a:hover{
+    background-color: #dac8b0;
+    color: #b6b1ad;
+  }
+  
+  li.active a{ 
+    background-color: #dac8b0;
+    color: #b6b1ad;
+  }
+
+.bar1{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 52%;
+    
+}
+
+.bar1 a{
+    color: 	#b6b1ad;
+    text-decoration: none;
+    font-size: 20px;
+   
+    
+}
+
+.drop{
+    
+    display:none;
+}
+
+li:hover{
+    background-color: 			#dac8b0;
+    
+}
+
+.down:hover .drop{
+
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    background-color:	#473730;
+    margin-left: -19.5px;
+}
+
+
+
+body{
+    background-image:linear-gradient( rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5) ),url("https://cdn.pixabay.com/photo/2020/02/13/20/37/pollution-4846741_960_720.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#graphtitle{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#myChart{
+   position: relative;
+   box-sizing: border-box;
+   border-radius: 5px;
+   padding-top: 10px;
+   padding-left: 5px;
+   padding-right: 20px;
+   padding-bottom: 5px;
+   margin: 10px;
+   position: absolute;
+}

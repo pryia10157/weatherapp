@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Weather">
+    <meta name ="keywords" content="weather,realtime,climate">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <title> Carbon Dioxide Growth</title>
+</head>
+<body>
+    <nav>
+        <a class="mobut">Menu</a>
+        <div class="name">
+            <a href="index (2).html"><h3>☀ Global Weather</h3></a>
+        </div>
+        
+        <ul class="bar1">
+           <li><a href="index (2).html">Home</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li class="down"><a href="statistics.html">Statistics</a>
+                <ul class="drop">
+                    <li><a href="rainfall.html">CO2</a></li>
+                    <li><a href="#">Sealevels</a></li>
+                    <li><a href="temperature.html">Temperature</a></li>
+                </ul>
+            </li>
+               <li><a href="resources.html">Resources</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+               <li><a href="about.html">About</a></li>
+        </ul>
+       
+    </nav>
+
+    <header id = "graphtitle">Growth rate of Carbon Dioxide</header>
+    <div id="text">
+        <canvas id="myChart" height="125" ></canvas>
+    </div>
+    
+    
+    <script src="CO2.js"></script>
+</body>
+</html>
