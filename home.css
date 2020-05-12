@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background-color: rgb(22, 32, 117,0.2);
+}
+
+h1.hometitle{
+    color: #EEE1D7;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://cdn.pixabay.com/photo/2012/10/26/01/38/cold-front-63037_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin: 20px;
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: lightgrey;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+
+a:hover{
+    background-color: lightgrey;
+    color: black;
+}
+
+li.active a{ 
+    background-color: lightgrey;
+    color: black;
+}
+
+h2.homesubtitle{
+    color: rgb(39, 34, 34);
+    text-transform: uppercase;
+    text-align: center;
+    font-style: oblique;
+    font-size: 50px;
+    font-size-adjust: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+div.home{
+    max-width: 1050px;
+    max-height: 1500px;
+    background-color: rgba(157, 177, 202, 0.5);
+    margin: 0 auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    box-shadow: 0 0 30px whitesmoke;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+p.words1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    color: rgb(49, 45, 45);
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size-adjust: inherit;
+    padding-right:10px
+}
+
+p.words2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-size-adjust: inherit;
+    color: rgb(46, 32, 32);
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right:10px
+}
+
+p.words3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-size-adjust: inherit;
+    color: rgb(56, 23, 23);
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right:10px
+}
+
+p.words4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-size-adjust: inherit;
+    color: rgb(59, 3, 3);
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right:10px
+}
+
+@media only screen and (max-width: 768px){
+    nav{
+        display: inline-block;
+        justify-content: left;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 15%;
+        background-color: rgb(22, 32, 117,0.2);  
+    }
+        
+    h1.hometitle{
+        color: #EEE1D7;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        margin: 0 auto;
+        text-align: center;
+        font-size-adjust: inherit;
+        padding: 20px;
+    }
+    
+    ul{
+        float: left;
+        list-style-type: none;
+        margin-left: 5px;
+    }
+        
+    li{
+        padding-bottom: 15px;
+    }
+        
+    a{
+        text-decoration: none;
+        text-size-adjust: inherit;
+        color: lightgrey;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.4s ease;
+    }
+        
+    a:hover{
+        background-color: lightgrey;
+        color: black;
+    }
+        
+    li.active a{ 
+        background-color: lightgrey;
+        color: black;
+    }  
+
+    header{
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+
+}
