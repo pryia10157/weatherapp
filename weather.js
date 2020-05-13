@@ -4,9 +4,10 @@ let city1 = document.getElementById('city');
 let temp1 = document.getElementById('temperature');
 let humid = document.getElementById('hum');
 let d = document.getElementById('date');
+var x=localStorage.getItem('k'); // gets key from key.js and stores it in variable x
 input.addEventListener('keydown',function(){
   if (event.key == "Enter"){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=3a259b6f421e4272bf751201a4a25b41')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+x)
     .then(Response => Response.json())
     .then(data => {
         let n = data['name'];                             // gets city name and loads it into n
@@ -24,3 +25,4 @@ input.addEventListener('keydown',function(){
     .catch(err =>("Error!!!!!"));
   }
  });
+
