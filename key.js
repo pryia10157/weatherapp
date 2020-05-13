@@ -1,2 +1,2 @@
-let key = 'API_KEY';
+let key = 'place API KEY here';
 localStorage.setItem('k',key);
