@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background-color: rgb(22, 32, 117,0.2);
+}
+
+h1.hometitle{
+    color: #EEE1D7;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: right;
+    font-size-adjust: inherit;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin: 20px;
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: lightgrey;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+
+a:hover{
+    background-color: lightgrey;
+    color: black;
+}
+
+li.active a{ 
+    background-color: lightgrey;
+    color: black;
+}
+
+header.con{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://cdn.pixabay.com/photo/2017/06/20/17/23/landscape-2423876_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+div.contact{
+    max-width: 600px;
+    max-height: 450px;
+    background-color: transparent;
+    margin: 50px auto;
+    margin-top: 125px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px whitesmoke;
+    padding: 30px;
+}
+
+div.contact p{
+    font-size: 40px;
+    font-optical-sizing: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    letter-spacing: 0.5px;
+}
+
+.input, .message .text{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.info .input{
+    width: 48.5%;
+    float: left;
+    margin-left: 0;
+    margin-right: 3%;
+}
+
+.info .input:last-child{
+    margin-right: 0%;
+}
+
+.message .text{
+    height: 150px;
+    resize: none;
+}
+
+button{
+    width: 50%;
+    height: 25px;
+    font-size: 16px;
+    padding: 2.5px 24px;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    transition-duration: 0.4s;
+    float: center;
+    margin-left: 25%;
+    cursor: pointer;
+    line-height: 20px;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 786px){
+    nav{
+        display: inline-block;
+        justify-content: left;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 15%;
+        background-color: rgb(22, 32, 117,0.2);  
+    }
+         
+    h1.hometitle{
+        color: #EEE1D7;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        margin: 0 auto;
+        text-align: center;
+        font-size-adjust: inherit;
+      
+        padding: 20px;
+    }
+
+    ul{
+        float: left;
+        list-style-type: none;
+        margin-left: 5px;
+    }
+    
+    li{
+        padding-bottom: 15px;
+    }
+    
+    a{
+        text-decoration: none;
+        text-size-adjust: inherit;
+        color: lightgrey;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.4s ease;
+    }
+    
+    a:hover{
+        background-color: lightgrey;
+        color: black;
+    }
+    
+    li.active a{ 
+        background-color: lightgrey;
+        color: black;
+    }
+
+    div.contact{
+        max-width: 600px;
+        max-height: 450px;
+        background-color: transparent;
+        margin: 50px auto;
+        margin-top: 125px;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px whitesmoke;
+        padding: 30px;
+    }
+
+    header.con{
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 18%;
+
+    }
+        
+    h1.hometitle{
+        color: #EEE1D7;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        margin: 0 auto;
+        text-align: center;
+        font-size-adjust: inherit;
+        padding: 20px;
+    }
+    
+    ul{
+        list-style-type: none;
+        margin-left: 5px;
+    }
+        
+    li{
+        float: left;
+        padding-bottom: 0px;
+    }
+        
+    a{
+        text-decoration: none;
+        text-size-adjust: inherit;
+        color: lightgrey;
+        padding: 0px 20px;
+        border: 1px solid transparent;
+        transition: 0.4s ease;
+    }
+        
+    a:hover{
+        background-color: lightgrey;
+        color: black;
+    }
+        
+    li.active a{ 
+        background-color: lightgrey;
+        color: black;
+    }  
+
+    header.con{
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+       
+    
+}
